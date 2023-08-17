@@ -1,0 +1,9 @@
+<div class="d-flex justify-content-center mt-5 mb-4">
+  <input
+    type="text"
+    placeholder="Search Food ..."
+    [(ngModel)]="searchItem"
+    (change)="search()"
+  />
+  <button (click)="search()">Search</button>
+</div>

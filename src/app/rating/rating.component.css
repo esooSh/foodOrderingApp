@@ -1,0 +1,7 @@
+.rating i {
+  color: gray;
+}
+
+.rating i.active {
+  color: orange;
+}

@@ -1,0 +1,66 @@
+ul {
+  padding: 0;
+}
+
+li a {
+  height: 22.2rem;
+  width: 20rem;
+  border: 1px solid whitesmoke;
+  border-radius: 1rem;
+  margin: 0.5rem;
+  color: #e72929;
+  /* padding: 0.9rem; */
+}
+
+li a img {
+  border-radius: 1rem;
+  border: 3px solid rgba(220, 220, 220, 0.642);
+}
+
+li a:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.content {
+  padding: 0.5rem 1rem;
+  position: relative;
+}
+
+.favorite {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 1.2rem;
+}
+
+span.favorite.not i {
+  color: gray;
+}
+.stars {
+  margin-bottom: 0.2rem;
+}
+
+.origins {
+  flex: 9;
+}
+
+.origins span {
+  border-radius: 2rem;
+  background-color: whitesmoke;
+  color: gray;
+  font-size: 0.8rem;
+  margin-right: 0.3rem;
+  font-display: inline-block;
+}
+
+.cook-time {
+  font-size: 0.8rem;
+  flex: 3;
+  text-align: center;
+}
+
+.price {
+  color: #424242;
+  margin-top: 0.2rem;
+}

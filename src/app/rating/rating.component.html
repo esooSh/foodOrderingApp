@@ -1,0 +1,5 @@
+<div class="rating">
+  <ng-container *ngFor="let star of stars">
+    <i class="fa-solid fa-star" [ngClass]="{ active: star <= rating }"></i>
+  </ng-container>
+</div>

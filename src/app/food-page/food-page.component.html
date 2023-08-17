@@ -1,0 +1,45 @@
+<div
+  *ngIf="food.id"
+  class="conTainer d-flex justify-content-center align-items-center flex-wrap m-5"
+>
+  <img [src]="food.imageUrl" [alt]="food.name" />
+
+  <div class="details w-100 d-flex flex-column">
+    <div class="header d-flex justify-content-between">
+      <span class="name">
+        {{ food.name }}
+      </span>
+      <span class="favorite {{ food.favorite ? '' : 'not' }}">
+        <i class="fa-solid fa-heart"></i>
+      </span>
+    </div>
+    <div class="stars">
+      <app-rating [food]="food"></app-rating>
+    </div>
+
+    <div class="origins d-flex flex-wrap my-1 mx-0">
+      <span *ngFor="let origin of food.origins">
+        {{ origin }}
+      </span>
+    </div>
+
+    <div class="tags my-3">
+      <app-tags [foodPageTags]="food.tags" justifyContent="start"></app-tags>
+    </div>
+
+    <div class="cook-time">
+      <span>
+        Time to cook about <strong>{{ food.cookTime }}</strong> minutes
+      </span>
+    </div>
+
+    <div class="price">
+      <span>
+        {{ food.price | currency }}
+      </span>
+    </div>
+
+    <button class="">Add To Cart</button>
+    <!-- (click)="addToCart()" -->
+  </div>
+</div>
